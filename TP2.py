@@ -54,9 +54,9 @@ class LanceTorpilles :
 
 class Vessel:
     def __init__(self, Coordinates : tuple, Max_hits : int, Weapon : Weapon) -> None:
-        coordinates = self.Coordinates
-        max_hits = self.Max_hits
-        weapon = self.Weapon
+        self.coordinates = Coordinates
+        self.max_hits = Max_hits #nombre d ehit pour mourir
+        self.weapon = Weapon
     
     def go_to(self, x : int, y : int, z : int) -> None :
         self.coordinates = (x, y, z) 
@@ -66,3 +66,13 @@ class Vessel:
     
     def fire_at(self, x : int, y : int, z : int) -> None:
         self.weapon.fire_at(x, y, z)
+        
+class ChampdeBataille :
+    def __init__(self, lenght, width, height ) -> None:
+        lenght = self.lenght
+        width = self.width
+        height = self.height
+        
+        
+    
+    
